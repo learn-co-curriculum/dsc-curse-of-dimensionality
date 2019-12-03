@@ -3,16 +3,16 @@
 
 ## Introduction
 
-The curse of dimensionality is an interesting paradox for data scientists. On the one hand, one often hopes to garner more information to improve the accuracy of a machine learning algorithm. However, there are also some interesting phenomenon that come along with larger datasets. In particular, the curse of dimensionality is based on the exploding volume of n-dimensional spaces as the number of dimensions, n, increases.
+The curse of dimensionality is an interesting paradox for data scientists. On the one hand, one often hopes to garner more information to improve the accuracy of a machine learning algorithm. However, there are also some interesting phenomena that come along with larger datasets. In particular, the curse of dimensionality is based on the exploding volume of n-dimensional spaces as the number of dimensions, n, increases.
 
 ## Objectives
 
 You will be able to:
 
-* Explain the curse of dimensionality
-* Discuss implications for the curse of dimensionality
+- Explain what is meant by the curse of dimensionality and its implications when training machine learning algorithms 
 
-## Sparseness in n-Dimensional Space
+
+## Sparseness in N-Dimensional Space
 
 Points in n-dimensional space become increasingly sparse as the number of dimensions increases. That is, the distance between points will continue to grow as the number of dimensions grows. This can be problematic in a number of machine learning algorithms, in particular, when clustering points into groups. Due to the exploding nature of n-dimensional space, there is also an unwieldy number of possible combinations when searching for optimal parameters to a machine learning algorithm. 
 
@@ -27,7 +27,7 @@ This image demonstrates how the average distance between points and the origin c
 
 The main implication of the curse dimensionality is that optimization problems can become infeasible as the number of features increases. The practical limit will vary based on your particular computer, and the time that you have to invest in a problem. As you'll see in the upcoming lab, this relationship is exponential. For machine learning algorithms that involve backpropagation, or iterative convergence, including Lasso and Ridge regression, this will drastically impact the size of feasible solvable problems.
 
-The sparsity of points also has additional consequences. Due to the sheer scale of potential points in an n-dimensional space as n continues to grow, the probability of seeing a particular point (or even nearby point) continues to plummet. This means that there are apt to be entire regions of an n-dimensional space that have yet to be explored. As such, if no such information from the training set is available regarding such cases, then making predictions regarding these cases will be guesswork. Put another way, with the increasing sparsity of points, you have an ever decreasing proportionate sample of the space. For example, a thousand observations in a 3 dimensional space might be quite powerful and provide sufficient information to determine a relevant classification or regression model. However, a thousand observations in a million-dimensional space is apt to be utterly useless in determining which features are most influential and to what degree. 
+The sparsity of points also has additional consequences. Due to the sheer scale of potential points in an n-dimensional space, as n continues to grow, the probability of seeing a particular point (or even nearby point) continues to plummet. This means that there are apt to be entire regions of an n-dimensional space that have yet to be explored. As such, if no such information from the training set is available regarding such cases, then making predictions regarding these cases will be guesswork. Put another way, with the increasing sparsity of points, you have an ever decreasing proportionate sample of the space. For example, a thousand observations in a 3 dimensional space might be quite powerful and provide sufficient information to determine a relevant classification or regression model. However, a thousand observations in a million-dimensional space is apt to be utterly useless in determining which features are most influential and to what degree. 
 
 ## Summary
 
